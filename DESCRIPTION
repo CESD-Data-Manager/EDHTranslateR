@@ -1,9 +1,9 @@
-Package: open-data-translation
-Title: Helper functions for translating open data
+Package: EDHTranslateR
+Title: Helper functions for translating open data into an acceptable bilingual format
 Version: 0.0.0.9000
 Authors@R: 
     person("Peter", "Kraska", , "peter.kraska@dfo-mpo.gc.ca", role = c("aut", "cre"))
-Description: Helper functions for translating open data.
+Description: Helper functions for translating open data into both official languages for compliance with TBS interpretation of the Offical Languages Act 2025.
 License:`use_gpl3_license()`
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
