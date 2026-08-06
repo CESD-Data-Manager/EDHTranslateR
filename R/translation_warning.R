@@ -81,13 +81,15 @@
 
   footer <- paste(rep("=", width), collapse = "")
 
-  warning(
+  rlang::warn(
     paste(
       c(header, body, footer),
       collapse = "\n"
     ),
     call. = FALSE,
-    immediate. = TRUE
+    immediate. = TRUE,
+    .frequency = 'regular',
+    .frequency_id = 'translation_warning'
   )
 
   invisible(NULL)
