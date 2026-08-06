@@ -88,7 +88,7 @@
     ),
     call. = FALSE,
     immediate. = TRUE,
-    .frequency = 'regular',
+    .frequency = 'regularly',
     .frequency_id = 'translation_warning'
   )
 
