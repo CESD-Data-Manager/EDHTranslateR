@@ -41,7 +41,7 @@ make_bilingual_lookup <- function(
     na.omit() |>
     unique()
 
-  translated <- polyglotr::google_translate(
+    translated <- polyglotr::google_translate(
     values,
     source_language = source_language,
     target_language = target_language
