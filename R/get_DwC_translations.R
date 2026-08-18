@@ -42,7 +42,16 @@ dwc_term_translation <- function(x) {
           dcterms_description_fr
         ) |>
         dplyr::slice(1)
-    } 
+    } else {
+      df[i, ] <- tibble::tibble(
+        orig_term = x[i],
+        term_localName = NA_character_,
+        label_en = NA_character_,
+        label_fr = NA_character_,
+        dcterms_description_en = NA_character_,
+        dcterms_description_fr = NA_character_
+      )
+    }
   }
   print(df)
 }
