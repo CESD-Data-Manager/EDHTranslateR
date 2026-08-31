@@ -32,7 +32,7 @@ make_bilingual_lookup <- function(
   separator = " / "
 ) {
   # Validate inputs
-  stopifnot(is.character(values))
+  stopifnot(is.character(values[!is.na(values)]))
 
   # Display machine translation warning
   .translation_warning()
